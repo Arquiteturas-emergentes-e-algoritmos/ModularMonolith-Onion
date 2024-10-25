@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{5F042E29-70A2-4CD4-A647-5CF7798A70CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bootstrapper", "Bootstrapper", "{D6302014-C5FF-473C-908B-8AB39783808D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{8D146B0A-DB37-4E6F-9E61-0EE572D0A565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{92616EF8-D32E-4786-8DC2-33511A622426}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{5B7FB755-A239-4AAE-A13E-9AB7F19A91EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MedicationPlan", "MedicationPlan", "{619B00AC-63E9-4683-9809-D84D8774DF09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Glucometer", "Glucometer", "{ADE78201-905D-437D-9332-C6E903C90A02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92616EF8-D32E-4786-8DC2-33511A622426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92616EF8-D32E-4786-8DC2-33511A622426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92616EF8-D32E-4786-8DC2-33511A622426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92616EF8-D32E-4786-8DC2-33511A622426}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92616EF8-D32E-4786-8DC2-33511A622426} = {D6302014-C5FF-473C-908B-8AB39783808D}
+		{5B7FB755-A239-4AAE-A13E-9AB7F19A91EA} = {5F042E29-70A2-4CD4-A647-5CF7798A70CC}
+		{619B00AC-63E9-4683-9809-D84D8774DF09} = {5F042E29-70A2-4CD4-A647-5CF7798A70CC}
+		{ADE78201-905D-437D-9332-C6E903C90A02} = {5F042E29-70A2-4CD4-A647-5CF7798A70CC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {639AA0D8-B179-481E-9C31-20857BCC17B8}
+	EndGlobalSection
+EndGlobal
