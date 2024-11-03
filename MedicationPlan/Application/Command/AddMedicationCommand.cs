@@ -1,5 +1,5 @@
 ﻿namespace MedicationPlan.Application.Command;
-public class AddMedicationAdapter : BaseMedicationCommand
+public class AddMedicationCommand : BaseMedicationCommand
 {
     public string Name { get; set; } = string.Empty;
     public DateTime TakeAt { get; set; } = DateTime.MinValue;
