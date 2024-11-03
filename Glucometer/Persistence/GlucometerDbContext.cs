@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 
 namespace Glucometer.Persistence;
-public class DataContext : DbContext
+public class GlucometerDbContext : DbContext
 {
-    public DataContext(DbContextOptions<DataContext> options) : base(options) { }
+    public GlucometerDbContext(DbContextOptions<GlucometerDbContext> options) : base(options) { }
 
     public DbSet<Domain.Glucometer> Glucometers { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)

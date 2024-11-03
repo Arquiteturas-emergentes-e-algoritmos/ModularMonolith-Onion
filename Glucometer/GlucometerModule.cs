@@ -13,7 +13,7 @@ public static class GlucometerModule
         services.AddTransient<IGlucometerRepository, GlucometerRepository>();
         services.AddTransient<GlucometerService>();
 
-        services.AddDbContext<DataContext>(options =>
+        services.AddDbContext<GlucometerDbContext>(options =>
         {
         });
 
