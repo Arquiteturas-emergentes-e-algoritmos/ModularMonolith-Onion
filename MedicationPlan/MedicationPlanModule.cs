@@ -8,7 +8,7 @@ namespace MedicationPlan;
 
 public static class MedicationPlanModule
 {
-    public static IServiceCollection AddGlucometerModule(this IServiceCollection services)
+    public static IServiceCollection AddMedicationPlanModule(this IServiceCollection services)
     {
         services.AddTransient<IMedicationPlanRepository, MedicationPlanRepository>();
         services.AddTransient<MedicationPlanService>();
