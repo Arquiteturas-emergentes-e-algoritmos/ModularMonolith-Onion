@@ -10,8 +10,6 @@ var glucometerAssembly = typeof(GlucometerModule).Assembly;
 var medicationPlanAssembly = typeof(MedicationPlanModule).Assembly;
 var userAssembly = typeof(UserModule).Assembly;
 
-
-
 builder.Services.AddCarterWithAssemblies(glucometerAssembly, medicationPlanAssembly, userAssembly);
 builder.Services.AddMediatRWithAssemblies(glucometerAssembly, medicationPlanAssembly, userAssembly);
 builder.Services.AddUserModule()

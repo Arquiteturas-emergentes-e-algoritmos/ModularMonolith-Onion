@@ -12,7 +12,7 @@ public class GlucometerController : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapPost("", ([FromBody] AddTestCommand request,
+        app.MapPost("glucometer", ([FromBody] AddTestCommand request,
             [FromServices] GlucometerService service) =>
         {
 
@@ -22,7 +22,7 @@ public class GlucometerController : ICarterModule
             return Results.Created("", result);
 
         });
-        app.MapGet("", ([FromBody] GetGlucometerCommand request,
+        app.MapGet("glucometer", ([FromBody] GetGlucometerCommand request,
             [FromServices] GlucometerService service) =>
         {
             if (!request.Validate())
@@ -30,7 +30,7 @@ public class GlucometerController : ICarterModule
             var result = service.Handle(request);
             return Results.Ok(result);
         });
-        app.MapPut("", ([FromBody] UpdateTestCommand request,
+        app.MapPut("glucometer", ([FromBody] UpdateTestCommand request,
             [FromServices] GlucometerService service) =>
         {
             if (!request.Validate())
@@ -38,7 +38,7 @@ public class GlucometerController : ICarterModule
             var result = service.Handle(request);
             return Results.Ok(result);
         });
-        app.MapDelete("", ([FromBody] DeleteTestCommand request,
+        app.MapDelete("glucometer", ([FromBody] DeleteTestCommand request,
             [FromServices] GlucometerService service) =>
         {
             if (!request.Validate())
