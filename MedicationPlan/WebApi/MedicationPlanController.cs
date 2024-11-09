@@ -13,7 +13,7 @@ public class MedicationPlanController : ICarterModule
 
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapPost("", ([FromBody] AddMedicationCommand request,
+        app.MapPost("medicationplan", ([FromBody] AddMedicationCommand request,
             [FromServices] MedicationPlanService service) =>
         {
 
@@ -23,7 +23,7 @@ public class MedicationPlanController : ICarterModule
             return Results.Created("", result);
 
         });
-        app.MapGet("", ([FromBody] GetMedicationPlanCommand request,
+        app.MapGet("medicationplan", ([FromBody] GetMedicationPlanCommand request,
             [FromServices] MedicationPlanService service) =>
         {
             if (!request.Validate())
@@ -31,7 +31,7 @@ public class MedicationPlanController : ICarterModule
             var result = service.Handle(request);
             return Results.Ok(result);
         });
-        app.MapPut("", ([FromBody] UpdateMedicationCommand request,
+        app.MapPut("medicationplan", ([FromBody] UpdateMedicationCommand request,
             [FromServices] MedicationPlanService service) =>
         {
             if (!request.Validate())
@@ -39,7 +39,7 @@ public class MedicationPlanController : ICarterModule
             var result = service.Handle(request);
             return Results.Ok(result);
         });
-        app.MapDelete("", ([FromBody] DeleteMedicationCommand request,
+        app.MapDelete("medicationplan", ([FromBody] DeleteMedicationCommand request,
             [FromServices] MedicationPlanService service) =>
         {
             if (!request.Validate())
