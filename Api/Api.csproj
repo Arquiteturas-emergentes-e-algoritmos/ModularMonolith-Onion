@@ -18,7 +18,6 @@
     <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\Glucometer\Glucometer.csproj" />
     <ProjectReference Include="..\MedicationPlan\MedicationPlan.csproj" />
-    <ProjectReference Include="..\User\User.csproj" />
   </ItemGroup>
 
 </Project>

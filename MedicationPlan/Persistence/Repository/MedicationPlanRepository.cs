@@ -9,6 +9,11 @@ public class MedicationPlanRepository : IMedicationPlanRepository
         throw new NotImplementedException();
     }
 
+    public Domain.MedicationPlan CreateMedicationPlan(Guid UserId)
+    {
+        throw new NotImplementedException();
+    }
+
     public void Delete(Domain.MedicationPlan entity)
     {
         throw new NotImplementedException();

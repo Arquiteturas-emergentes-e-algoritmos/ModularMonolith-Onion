@@ -2,18 +2,15 @@ using Api.Extentions;
 using Carter;
 using Glucometer;
 using MedicationPlan;
-using User;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var glucometerAssembly = typeof(GlucometerModule).Assembly;
 var medicationPlanAssembly = typeof(MedicationPlanModule).Assembly;
-var userAssembly = typeof(UserModule).Assembly;
 
-builder.Services.AddCarterWithAssemblies(glucometerAssembly, medicationPlanAssembly, userAssembly);
-builder.Services.AddMediatRWithAssemblies(glucometerAssembly, medicationPlanAssembly, userAssembly);
-builder.Services.AddUserModule()
-                .AddGlucometerModule()
+builder.Services.AddCarterWithAssemblies(glucometerAssembly, medicationPlanAssembly);
+builder.Services.AddMediatRWithAssemblies(glucometerAssembly, medicationPlanAssembly);
+builder.Services.AddGlucometerModule()
                 .AddMedicationPlanModule();
 
 builder.Services.AddControllers();

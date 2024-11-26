@@ -9,6 +9,11 @@ public class GlucometerRepository : IGlucometerRepository
         throw new NotImplementedException();
     }
 
+    public Domain.Glucometer CreateGlucometer(Guid UserId)
+    {
+        throw new NotImplementedException();
+    }
+
     public void Delete(Domain.Glucometer entity)
     {
         throw new NotImplementedException();

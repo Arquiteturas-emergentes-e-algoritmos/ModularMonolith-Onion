@@ -3,6 +3,7 @@
 namespace MedicationPlan.Domain;
 public class MedicationPlan : Entity
 {
+    public Guid UserId { get; set; } = Guid.NewGuid();
     public List<Medication> Medications { get; set; } = [];
     public DateTime BeginAt { get; set; } = DateTime.UtcNow;
     public DateTime FinishAt { get; set; } = DateTime.MaxValue;

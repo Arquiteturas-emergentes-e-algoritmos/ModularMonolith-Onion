@@ -47,5 +47,9 @@ public class MedicationPlanController : ICarterModule
             var result = service.Handle(request);
             return Results.Ok(result);
         });
+        app.MapGet("healthcheck", () =>
+        {
+            return Results.Ok("Alive");
+        });
     }
 }

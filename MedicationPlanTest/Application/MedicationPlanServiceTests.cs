@@ -24,7 +24,7 @@ namespace MedicationPlan.Tests
         {
             // Arrange
             var planId = Guid.NewGuid();
-            var command = new AddMedicationCommand { MedicationPlanId = planId, Name = "Aspirin", TakeAt = DateTime.Now };
+            var command = new AddMedicationCommand { UserId = planId, Name = "Aspirin", TakeAt = DateTime.Now };
             var medicationPlan = new MedicationPlan.Domain.MedicationPlan
             {
                 Id = planId
@@ -44,7 +44,7 @@ namespace MedicationPlan.Tests
         {
             // Arrange
             var planId = Guid.NewGuid();
-            var command = new GetMedicationPlanCommand { MedicationPlanId = planId };
+            var command = new GetMedicationPlanCommand { UserId = planId };
             var medicationPlan = new MedicationPlan.Domain.MedicationPlan
             {
                 Id = planId
@@ -65,7 +65,7 @@ namespace MedicationPlan.Tests
             // Arrange
             var planId = Guid.NewGuid();
             var medication = new Medication("Ibuprofen", DateTime.Now);
-            var command = new UpdateMedicationCommand { MedicationPlanId = planId, Medication = medication };
+            var command = new UpdateMedicationCommand { UserId = planId, Medication = medication };
             var medicationPlan = new MedicationPlan.Domain.MedicationPlan
             {
                 Id = planId
@@ -86,7 +86,7 @@ namespace MedicationPlan.Tests
             // Arrange
             var planId = Guid.NewGuid();
             var medicationId = Guid.NewGuid();
-            var command = new DeleteMedicationCommand { MedicationPlanId = planId, MedicationId = medicationId };
+            var command = new DeleteMedicationCommand { UserId = planId, MedicationId = medicationId };
             var medicationPlan = new MedicationPlan.Domain.MedicationPlan
             {
                 Id = planId

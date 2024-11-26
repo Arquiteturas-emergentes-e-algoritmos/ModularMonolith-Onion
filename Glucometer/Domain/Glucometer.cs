@@ -4,6 +4,7 @@ namespace Glucometer.Domain;
 
 public class Glucometer : Entity
 {
+    public Guid UserId { get; set; } = Guid.NewGuid();
     public List<GlucoseTest> GlucoseTests { get; set; } = [];
     public void AddTest(GlucoseTest test)
     {

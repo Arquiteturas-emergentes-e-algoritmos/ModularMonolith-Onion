@@ -46,5 +46,9 @@ public class GlucometerController : ICarterModule
             var result = service.Handle(request);
             return Results.Ok(result);
         });
+        app.MapGet("healthcheck", () =>
+        {
+            return Results.Ok("Alive");
+        });
     }
 }
