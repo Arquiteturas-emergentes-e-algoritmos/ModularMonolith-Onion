@@ -10,10 +10,10 @@ namespace MedicationPlan.WebApi;
 
 public class MedicationPlanController : ICarterModule
 {
-
+    private const string _routebasename = "medicationplan";
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapPost("medicationplan", ([FromBody] AddMedicationCommand request,
+        app.MapPost(_routebasename, ([FromBody] AddMedicationCommand request,
             [FromServices] MedicationPlanService service) =>
         {
 
@@ -23,7 +23,7 @@ public class MedicationPlanController : ICarterModule
             return Results.Created("", result);
 
         });
-        app.MapGet("medicationplan", ([FromBody] GetMedicationPlanCommand request,
+        app.MapGet(_routebasename, ([FromBody] GetMedicationPlanCommand request,
             [FromServices] MedicationPlanService service) =>
         {
             if (!request.Validate())
@@ -31,7 +31,7 @@ public class MedicationPlanController : ICarterModule
             var result = service.Handle(request);
             return Results.Ok(result);
         });
-        app.MapPut("medicationplan", ([FromBody] UpdateMedicationCommand request,
+        app.MapPut(_routebasename, ([FromBody] UpdateMedicationCommand request,
             [FromServices] MedicationPlanService service) =>
         {
             if (!request.Validate())
@@ -39,7 +39,7 @@ public class MedicationPlanController : ICarterModule
             var result = service.Handle(request);
             return Results.Ok(result);
         });
-        app.MapDelete("medicationplan", ([FromBody] DeleteMedicationCommand request,
+        app.MapDelete(_routebasename, ([FromBody] DeleteMedicationCommand request,
             [FromServices] MedicationPlanService service) =>
         {
             if (!request.Validate())

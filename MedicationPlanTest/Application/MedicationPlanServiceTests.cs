@@ -9,8 +9,8 @@ namespace MedicationPlan.Tests
     [TestClass]
     public class MedicationPlanServiceTests
     {
-        private Mock<IMedicationPlanRepository> _mockRepository;
-        private MedicationPlanService _medicationPlanService;
+        private Mock<IMedicationPlanRepository> _mockRepository = null!;
+        private MedicationPlanService _medicationPlanService = null!;
 
         [TestInitialize]
         public void Setup()

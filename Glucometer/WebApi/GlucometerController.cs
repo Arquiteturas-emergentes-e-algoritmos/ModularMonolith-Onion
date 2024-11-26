@@ -10,9 +10,11 @@ namespace Glucometer.WebApi;
 
 public class GlucometerController : ICarterModule
 {
+    private const string _routebasename = "glucometer";
+
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapPost("glucometer", ([FromBody] AddTestCommand request,
+        app.MapPost(_routebasename, ([FromBody] AddTestCommand request,
             [FromServices] GlucometerService service) =>
         {
 
@@ -22,7 +24,7 @@ public class GlucometerController : ICarterModule
             return Results.Created("", result);
 
         });
-        app.MapGet("glucometer", ([FromBody] GetGlucometerCommand request,
+        app.MapGet(_routebasename, ([FromBody] GetGlucometerCommand request,
             [FromServices] GlucometerService service) =>
         {
             if (!request.Validate())
@@ -30,7 +32,7 @@ public class GlucometerController : ICarterModule
             var result = service.Handle(request);
             return Results.Ok(result);
         });
-        app.MapPut("glucometer", ([FromBody] UpdateTestCommand request,
+        app.MapPut(_routebasename, ([FromBody] UpdateTestCommand request,
             [FromServices] GlucometerService service) =>
         {
             if (!request.Validate())
@@ -38,7 +40,7 @@ public class GlucometerController : ICarterModule
             var result = service.Handle(request);
             return Results.Ok(result);
         });
-        app.MapDelete("glucometer", ([FromBody] DeleteTestCommand request,
+        app.MapDelete(_routebasename, ([FromBody] DeleteTestCommand request,
             [FromServices] GlucometerService service) =>
         {
             if (!request.Validate())

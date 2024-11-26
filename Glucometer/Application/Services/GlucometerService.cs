@@ -1,12 +1,11 @@
 ﻿using Common.Application.Command;
-using Common.Application.Service;
 using Glucometer.Application.Command;
 using Glucometer.Application.Repository;
 using Glucometer.Domain;
 
 namespace Glucometer.Application.Services;
 
-public class GlucometerService(IGlucometerRepository glucometerRepository) : BaseService
+public class GlucometerService(IGlucometerRepository glucometerRepository)
 {
     private readonly IGlucometerRepository _glucometerRepository = glucometerRepository;
     public CommandResponse Handle(AddTestCommand command)
