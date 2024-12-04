@@ -1,6 +1,6 @@
 # Monolito Modular
 
-O monolito modular, também conhecido como modulito, é uma solução, proposta pela Google através do framework "Service Weaver", que nos permite juntar o melhor dos dois mundos: a velocidade de desenvolvimento de um monolito com a escalabilidade, segurança  e tolerância a falhas dos microserviços (ref). Esta arquitetura tem a capacidade de manter as escolhas em aberto, ou seja, pode evoluir para um monolito clássico ou para uma arquitetura em microserviços conforme a necessidade do aplicativo. A figura abaixo ilustra as diferenças entre ambas as arquiteturas.
+O monolito modular, também conhecido como modulito, é uma solução, proposta pela Google através do framework "Service Weaver", que nos permite juntar o melhor dos dois mundos: a velocidade de desenvolvimento de um monolito com a escalabilidade, segurança  e tolerância a falhas dos microserviços. Esta arquitetura tem a capacidade de manter as escolhas em aberto, ou seja, pode evoluir para um monolito clássico ou para uma arquitetura em microserviços conforme a necessidade do aplicativo. A figura abaixo ilustra as diferenças entre ambas as arquiteturas.
 
 Algumas características cruciais dos monolitos modulares são:
 - Segregação de módulos : Cada módulo é independente, assim como nos microserviços, com cada um deles contendo seu próprio conjunto de testes.  
