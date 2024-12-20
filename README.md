@@ -55,3 +55,4 @@ A figura 2 apresenta os dados coletados pelo SonarQube referentes a esta arquite
 | Versão |    Data    |         Descrição          |  Autor(es)  |
 | :----: | :--------: | :------------------------: | :---------: |
 | `1.0`  | 04/12/2024 | Criação de documento | Kauã |
+| `1.1` | 19/12/2024| Adição do sonar e das referências | Kauã| 
