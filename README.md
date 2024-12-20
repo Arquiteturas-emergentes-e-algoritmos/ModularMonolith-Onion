@@ -37,7 +37,7 @@ A **Onion Architecture** é uma abordagem para sistemas corporativos complexos, 
    O núcleo define interfaces e depende de implementações fornecidas pelas camadas externas, promovendo flexibilidade e manutenção.
 
 ## 🪐 SonarQube
-A figura 2 apresenta os dados coletados pelo SonarQube referentes a esta arquitetura.
+A figura 2 apresenta os dados coletados pelo SonarQube referentes a esta arquitetura, vale ressaltar que devido a configurações do sonar, não foi possível coletar a cobertura dos testes automaticamente.
 
 ![Arquitetura Monolino Modular](img/SonarModulith.PNG)  
 *Figura 2: SonarQube. Fonte:Autor*  
