@@ -42,6 +42,8 @@ A figura 2 apresenta os dados coletados pelo SonarQube referentes a esta arquite
 ![Arquitetura Monolino Modular](img/SonarModulith.PNG)  
 *Figura 2: SonarQube. Fonte:Autor*  
 
+Vale ressaltar, que o projeto demora cerca de 1 minuto e 30 segundos para buildar e compilar, algo muito problemático pois os outros projetos demoram cerca de 10 segundos.
+
 ## 📖 Referências
 
 1. Su, R., & Li, X. (2024). Modular Monolith: Is This the Trend in Software Architecture? *Proceedings of the 1st International Workshop on New Trends in Software Architecture*, 10–13. Association for Computing Machinery, New York, NY, USA. DOI: [10.1145/3643657.3643911](https://doi.org/10.1145/3643657.3643911).
@@ -55,4 +57,5 @@ A figura 2 apresenta os dados coletados pelo SonarQube referentes a esta arquite
 | Versão |    Data    |         Descrição          |  Autor(es)  |
 | :----: | :--------: | :------------------------: | :---------: |
 | `1.0`  | 04/12/2024 | Criação de documento | Kauã |
-| `1.1` | 19/12/2024| Adição do sonar e das referências | Kauã| 
+| `1.1`  | 19/12/2024 | Adição do sonar e das referências | Kauã| 
+| `1.2`  | 11/01/2024 | Adição do tempo 
