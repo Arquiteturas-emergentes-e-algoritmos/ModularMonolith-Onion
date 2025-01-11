@@ -42,7 +42,7 @@ A figura 2 apresenta os dados coletados pelo SonarQube referentes a esta arquite
 ![Arquitetura Monolino Modular](img/SonarModulith.PNG)  
 *Figura 2: SonarQube. Fonte:Autor*  
 
-Vale ressaltar, que o projeto demora cerca de 1 minuto e 30 segundos para buildar e compilar, algo muito problemático pois os outros projetos demoram cerca de 10 segundos.
+Vale ressaltar, que o projeto demora cerca de 5 segundos para buildar e compilar, algo muito problemático pois os outros projetos demoram cerca de 2 segundos em mesmas condições.
 
 ## 📖 Referências
 
