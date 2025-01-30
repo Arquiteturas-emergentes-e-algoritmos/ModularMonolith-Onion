@@ -58,4 +58,4 @@ Vale ressaltar, que o projeto demora cerca de 5 segundos para buildar e compilar
 | :----: | :--------: | :------------------------: | :---------: |
 | `1.0`  | 04/12/2024 | Criação de documento | Kauã |
 | `1.1`  | 19/12/2024 | Adição do sonar e das referências | Kauã| 
-| `1.2`  | 11/01/2024 | Adição do tempo 
+| `1.2`  | 11/01/2024 | Adição do tempo | Kauã|
